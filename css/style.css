@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+    height: 100vh;
 }
 
 header {
@@ -11,8 +12,8 @@ header {
 }
 
 main {
-    background-color: #ffe6e6;
     width: 100%;
+    background-color: #f1f1f1;
 }
 
 .website-logo {
@@ -57,8 +58,8 @@ main {
     border-bottom: 2px solid #ff6666;
 }
 
-.email {
-    height: 100vh;
+.emailrow {
+    height: 400px;
     background-color: white;
 }
 
@@ -111,6 +112,60 @@ main {
 
 .menubar nav ul li:not(.activemenu):hover {
     color: #ffb3b3;
+}
+
+.titolo_mail {
+    width: 200px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.corpo_mail {
+    width: 400px;
+    display: inline-block;
+}
+
+.emailbar {
+    padding-top: 20px;
+}
+
+.email {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+
+.letta {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.non_letta {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.pieno {
+    visibility: hidden;
+}
+
+.email i:hover {
+    display: none;
+}
+
+.email i:hover .pieno {
+    visibility: visible;
+}
+
+
+.iconsbar nav {
+    padding: 20px 0 20px 0;
+    font-size: 35px;
+    border-left: 1px solid grey;
+}
+
+.iconsbar nav ul li {
+    list-style-type: none;
+    padding: 10px 0 10px 0;
 }
 
 /* cellulari */
