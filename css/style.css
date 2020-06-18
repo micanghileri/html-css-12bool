@@ -10,6 +10,11 @@ header {
     height: 100px;
 }
 
+main {
+    background-color: #ffe6e6;
+    width: 100%;
+}
+
 .website-logo {
     text-align: left;
     padding-left: 20px;
@@ -24,18 +29,27 @@ header {
     visibility: hidden;
 }
 
-nav {
+.socialbar nav {
     text-align: right;
+    line-height: 100px;
 }
 
-ul li {
+.socialbar ul li {
     display: inline-block;
     text-transform: uppercase;
     padding: 0 7px;
     font-weight: bolder;
-    color: #cccccc;
     height: 99px;
     font-size: 13px;
+}
+
+.socialbar ul li:not(.active) {
+    color: #cccccc;
+}
+
+.socialbar ul li:not(.active):hover {
+    color: #ffb3b3;
+    border-bottom: 2px solid #ffb3b3;
 }
 
 .active {
@@ -43,9 +57,60 @@ ul li {
     border-bottom: 2px solid #ff6666;
 }
 
-ul li:not(.active):hover {
+.email {
+    height: 100vh;
+    background-color: white;
+}
+
+.menubar {
+    text-align: left;
+    border-right: 2px solid grey;
+}
+.menubar ul li {
+    text-align: left;
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.menubar button {
+    padding: 15px 25px 15px 25px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 23px;
+    border-radius: 23px;
+    margin: 20px 0 20px 20px;
+    cursor: pointer;
+}
+
+.menubar button:hover {
+    background-color: #e6e6e6;
+}
+
+.menubar button:hover {
+    color: white;
+}
+
+.menubar button p {
+    display: inline-block;
+    color: #737373;
+}
+
+.menubar button i {
+    color: rgb(131,58,180);
+    color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.menubar nav {
+    padding-left: 20px;
+    color: #595959;
+}
+
+.activemenu {
+    color: #ff6666;
+}
+
+.menubar nav ul li:not(.activemenu):hover {
     color: #ffb3b3;
-    border-bottom: 2px solid #ffb3b3;
 }
 
 /* cellulari */
@@ -79,4 +144,7 @@ ul li:not(.active):hover {
         color: #d9d9d9;
     }
 
+    .socialbar {
+        display: none;
+    }
 }
