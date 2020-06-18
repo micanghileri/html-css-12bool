@@ -13,22 +13,10 @@
 .row {
     max-width: 1170px;
     margin: 0 auto;
-    /* DA CANCELLARE */
-    height: 100px;
-}
-
-.row .row {
-    padding: 5px;
-}
-
-.row .row [class^="col-"] {
-    /* DA CANCELLARE */
-    background-color: hotpink;
 }
 
 [class^="col-"] {
     height: 100%;
-    border: 1px solid black;
     float: left;
     text-align: center;
     line-height: 100px;
