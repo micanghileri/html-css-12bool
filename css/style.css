@@ -2,18 +2,22 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    height: 100vh;
+    background-color: #f2f2f2;
 }
 
 header {
-    background-color: #f2f2f2;
     width: 100%;
     height: 100px;
 }
 
 main {
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     background-color: #f1f1f1;
+}
+
+li:hover {
+    cursor: pointer;
 }
 
 .website-logo {
@@ -59,13 +63,13 @@ main {
 }
 
 .emailrow {
-    height: 400px;
+    height: 500px;
     background-color: white;
+    border-radius: 15px;
 }
 
 .menubar {
     text-align: left;
-    border-right: 2px solid grey;
 }
 .menubar ul li {
     text-align: left;
@@ -126,46 +130,40 @@ main {
 }
 
 .emailbar {
-    padding-top: 20px;
+    height: 100%;
+    background-color: #f2f2f2;
+    overflow: scroll;
+    box-shadow: 0 0 20px lightgrey;
 }
 
 .email {
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #a6a6a6;
 }
 
 .letta {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #f2f2f2;
 }
 
 .non_letta {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.pieno {
-    visibility: hidden;
-}
-
-.email i:hover {
-    display: none;
-}
-
-.email i:hover .pieno {
-    visibility: visible;
+    background-color: #d9d9d9;
 }
 
 
 .iconsbar nav {
     padding: 20px 0 20px 0;
     font-size: 35px;
-    border-left: 1px solid grey;
 }
 
 .iconsbar nav ul li {
     list-style-type: none;
     padding: 10px 0 10px 0;
+}
+
+.iconsbar ul li:hover {
+    color: #ff6666;
 }
 
 /* cellulari */
